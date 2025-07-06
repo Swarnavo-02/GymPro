@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - GymPro Fitness Center</title>
+  <meta name="description" content="Get in touch with GymPro. Visit our location, call us, or send a message. We're here to help you start your fitness journey today!">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💪</text></svg>">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar container">
+      <div class="logo">GymPro</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Page Header -->
+    <section class="page-header" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover;">
+      <div class="container">
+        <h1>Get In Touch</h1>
+        <p>Ready to start your fitness journey? Contact us today for a free consultation, facility tour, or to answer any questions you may have.</p>
+      </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="contact-content">
+          <!-- Contact Form -->
+          <div class="contact-form fade-in">
+            <h2>Send Us a Message</h2>
+            <p style="color: #666; margin-bottom: 2rem;">Fill out the form below and we'll get back to you within 24 hours. All fields are required.</p>
+            
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="interest">I'm Interested In</label>
+                <select id="interest" name="interest" style="width: 100%; padding: 0.8rem; border: 2px solid #eee; border-radius: 8px; font-size: 1rem;">
+                  <option value="">Select an option</option>
+                  <option value="membership">Membership Information</option>
+                  <option value="personal-training">Personal Training</option>
+                  <option value="group-classes">Group Classes</option>
+                  <option value="nutrition">Nutrition Coaching</option>
+                  <option value="corporate">Corporate Wellness</option>
+                  <option value="tour">Facility Tour</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" placeholder="Tell us about your fitness goals, questions, or how we can help you..." required></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label style="display: flex; align-items: center; font-weight: normal; cursor: pointer;">
+                  <input type="checkbox" id="newsletter" name="newsletter" style="margin-right: 0.5rem;">
+                  Subscribe to our newsletter for fitness tips and special offers
+                </label>
+              </div>
+              
+              <button type="submit" class="btn" style="width: 100%; margin-top: 1rem;">Send Message</button>
+              
+              <div id="formMessage" class="form-message"></div>
+            </form>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="contact-info fade-in">
+            <h2>Visit Our Gym</h2>
+            <p style="color: #666; margin-bottom: 2rem;">Come see our state-of-the-art facility and meet our expert team. We're located in the heart of the city with easy access and plenty of parking.</p>
+            
+            <div class="contact-item">
+              <h3>📍 Address</h3>
+              <p>123 Fitness Street<br>
+              Downtown District<br>
+              New York, NY 10001</p>
+            </div>
+            
+            <div class="contact-item">
+              <h3>📞 Phone</h3>
+              <p><a href="tel:+1234567890" style="color: #ff6b35;">(123) 456-7890</a></p>
+            </div>
+            
+            <div class="contact-item">
+              <h3>✉️ Email</h3>
+              <p><a href="mailto:info@gympro.com" style="color: #ff6b35;">info@gympro.com</a></p>
+            </div>
+            
+            <div class="contact-item">
+              <h3>🕒 Hours</h3>
+              <p><strong>Monday - Friday:</strong> 5:00 AM - 11:00 PM<br>
+              <strong>Saturday:</strong> 6:00 AM - 10:00 PM<br>
+              <strong>Sunday:</strong> 7:00 AM - 9:00 PM</p>
+              <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #ff6b35;"><strong>Premium & Elite members enjoy 24/7 access!</strong></p>
+            </div>
+            
+            <div class="contact-item">
+              <h3>🚗 Parking</h3>
+              <p>Free parking available<br>
+              Underground garage entrance on Main St.<br>
+              Street parking also available</p>
+            </div>
+            
+            <div class="contact-item">
+              <h3>🚇 Public Transport</h3>
+              <p>Subway: Lines 4, 5, 6 (Union Square)<br>
+              Bus: Routes 14, 23, 42<br>
+              Just 2 blocks from Union Square Station</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section-padding" style="background: #f8f9fa; padding-top: 0;">
+      <div class="container">
+        <div class="map-container fade-in">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425878459418!3d40.74844097932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sUnion%20Square%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1635959542742!5m2!1sen!2sus" 
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="GymPro Location Map">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Contact Options -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: 3rem;">
+          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 2.5rem; margin-bottom: 1rem; color: #333;">Quick Contact Options</h2>
+          <p style="font-size: 1.1rem; color: #666;">Choose the most convenient way to get in touch with us.</p>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto;">
+          <div class="fade-in" style="background: #fff; padding: 2rem; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #ff6b35, #f7931e); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem;">📞</div>
+            <h3 style="margin-bottom: 1rem; color: #333;">Call Us</h3>
+            <p style="color: #666; margin-bottom: 1.5rem;">Speak directly with our team for immediate assistance and answers to your questions.</p>
+            <a href="tel:+1234567890" class="btn btn-secondary">Call Now</a>
+          </div>
+          
+          <div class="fade-in" style="background: #fff; padding: 2rem; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #ff6b35, #f7931e); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem;">🏃</div>
+            <h3 style="margin-bottom: 1rem; color: #333;">Visit Us</h3>
+            <p style="color: #666; margin-bottom: 1.5rem;">Take a tour of our facilities and meet our trainers. No appointment necessary during business hours.</p>
+            <a href="#" class="btn btn-secondary" onclick="window.open('https://maps.google.com/?q=Union+Square+New+York', '_blank')">Get Directions</a>
+          </div>
+          
+          <div class="fade-in" style="background: #fff; padding: 2rem; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #ff6b35, #f7931e); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem;">💬</div>
+            <h3 style="margin-bottom: 1rem; color: #333;">Live Chat</h3>
+            <p style="color: #666; margin-bottom: 1.5rem;">Chat with our support team online for quick answers to your questions.</p>
+            <button class="btn btn-secondary" onclick="alert('Live chat feature coming soon! Please use the contact form or call us.')">Start Chat</button>
+          </div>
+          
+          <div class="fade-in" style="background: #fff; padding: 2rem; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #ff6b35, #f7931e); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem;">📧</div>
+            <h3 style="margin-bottom: 1rem; color: #333;">Email Us</h3>
+            <p style="color: #666; margin-bottom: 1.5rem;">Send us an email and we'll respond within 24 hours with detailed information.</p>
+            <a href="mailto:info@gympro.com" class="btn btn-secondary">Send Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding" style="background: #f8f9fa;">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: 3rem;">
+          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 2.5rem; margin-bottom: 1rem; color: #333;">Common Questions</h2>
+          <p style="font-size: 1.1rem; color: #666;">Quick answers to frequently asked questions. Can't find what you're looking for? Contact us!</p>
+        </div>
+        
+        <div style="max-width: 800px; margin: 0 auto;">
+          <div class="fade-in" style="background: #fff; margin-bottom: 1rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <div style="padding: 1.5rem;">
+              <h4 style="color: #333; margin-bottom: 0.5rem;">Do you offer free trials?</h4>
+              <p style="color: #666;">Yes! We offer a complimentary 3-day trial pass for new members. This includes access to all equipment, group classes, and a free fitness assessment.</p>
+            </div>
+          </div>
+          
+          <div class="fade-in" style="background: #fff; margin-bottom: 1rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <div style="padding: 1.5rem;">
+              <h4 style="color: #333; margin-bottom: 0.5rem;">What should I bring for my first visit?</h4>
+              <p style="color: #666;">Just bring comfortable workout clothes, athletic shoes, a water bottle, and a valid ID. We provide towels and have locker rooms with showers available.</p>
+            </div>
+          </div>
+          
+          <div class="fade-in" style="background: #fff; margin-bottom: 1rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <div style="padding: 1.5rem;">
+              <h4 style="color: #333; margin-bottom: 0.5rem;">Do you have personal trainers available?</h4>
+              <p style="color: #666;">Absolutely! We have certified personal trainers available for one-on-one sessions, small group training, and specialized programs. Book a consultation to get started.</p>
+            </div>
+          </div>
+          
+          <div class="fade-in" style="background: #fff; margin-bottom: 1rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <div style="padding: 1.5rem;">
+              <h4 style="color: #333; margin-bottom: 0.5rem;">Is parking available?</h4>
+              <p style="color: #666;">Yes, we offer free parking in our underground garage with entrance on Main Street. Street parking is also available, and we're easily accessible by public transportation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding" style="background: linear-gradient(135deg, #ff6b35, #f7931e); color: #fff;">
+      <div class="container text-center">
+        <h2 style="font-family: 'Montserrat', sans-serif; font-size: 2.5rem; margin-bottom: 1rem;">Ready to Transform Your Life?</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Don't wait another day to start your fitness journey. Contact us now and take the first step towards a healthier, stronger you!</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="tel:+1234567890" class="btn" style="background: #fff; color: #ff6b35;">Call Now: (123) 456-7890</a>
+          <a href="#contactForm" class="btn btn-secondary" style="border-color: #fff; color: #fff;" onclick="document.getElementById('contactForm').scrollIntoView({behavior: 'smooth'})">Send Message</a>
+        </div>
+        <p style="margin-top: 1.5rem; font-size: 0.9rem; opacity: 0.9;">🎁 Mention this website and get your first personal training session FREE!</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 GymPro. All rights reserved. | Designed with ❤️ for fitness enthusiasts</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
